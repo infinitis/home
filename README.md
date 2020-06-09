@@ -1,3 +1,3 @@
 ### Home Project
 
-Landing page/project for website. WIP
+Landing page/project for website.
