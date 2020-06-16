@@ -19,7 +19,7 @@ ifndef REGISTRY
 	$(error REGISTRY must be defined)
 endif
 ifndef VERSION
-	$(MAKE) push VERSION=`git describe 2>/dev/null || cat tag`
+	$(MAKE) push VERSION=`git describe`
 else
 	docker tag $(IMAGE_NAME) $(REGISTRY)/$(IMAGE_NAME):$(VERSION)
 	docker push $(REGISTRY)/$(IMAGE_NAME):$(VERSION)
